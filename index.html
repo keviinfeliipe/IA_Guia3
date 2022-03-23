@@ -12,23 +12,23 @@
 
 <body>
     <br>
-    <h1 class="text-center">PERCEPTRON SIMPLE</h1>
+    <h1 class="text-center">SIMPLE PERCEPTRON</h1>
     <br>
     <div class="container">
         <div class="row">
             <div class="col">
-                <h5 class="text-center">VALORES INICIALES</h5>
+                <h5 class="text-center">INITIAL VALUES</h5>
                 <div class="form-floating">
                     <input type="text" class="form-control" id="W1" placeholder="1.2">
-                    <label for="floatingInput">Peso W1</label>
+                    <label for="floatingInput">Weight W1</label>
                 </div>
                 <div class="form-floating">
                     <input type="text" class="form-control" id="W2" placeholder="1.2">
-                    <label for="floatingInput">Peso W2</label>
+                    <label for="floatingInput">Weight W2</label>
                 </div>
                 <div class="form-floating">
                     <input type="text" class="form-control" id="E" placeholder="1.2">
-                    <label for="floatingInput">Factor de aprendizaje</label>
+                    <label for="floatingInput">Learning Factor</label>
                 </div>
                 <div class="form-floating">
                     <input type="text" class="form-control" id="ERROR" placeholder="1.2">
@@ -37,10 +37,10 @@
                 <br>
                 <div class="d-grid gap-2">
                     <button class="btn btn-primary" type="button" aria-disabled="true"
-                        onclick="start();">CALCULAR</button>
+                        onclick="start();">CALCULATE</button>
                 </div>
                 <br>
-                <h5 class="text-center">COMPUERTA OR</h5>
+                <h5 class="text-center">GATE OR</h5>
                 <table class="table">
                     <thead class="table-dark">
                         <tr>
@@ -80,14 +80,14 @@
             </div>
             <div class="col-10">
 
-                <h4 class="text-center">Nuevos valores</h4>
+                <h4 class="text-center">New Values</h4>
                 
                 <div class="collapse" id="labels">
                     <div class="row">
                         <div class="col-3">
                             <div class="card" style="width: 18rem;">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Nuevo peso W1</h5>
+                                    <h5 class="card-title">New Weight W1</h5>
                                     <p class="card-text" id="nW1"></p>
                                 </div>
                             </div>
@@ -95,7 +95,7 @@
                         <div class="col-3">
                             <div class="card" style="width: 18rem;">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Nuevo peso W2</h5>
+                                    <h5 class="card-title">New Weight W2</h5>
                                     <p class="card-text" id="nW2"></p>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@
                         <div class="col-3">
                             <div class="card" style="width: 18rem;">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Nuevo Error</h5>
+                                    <h5 class="card-title">New Error</h5>
                                     <p class="card-text" id="nError"></p>
                                 </div>
                             </div>
@@ -111,7 +111,7 @@
                         <div class="col-3">
                             <div class="card" style="width: 18rem;">
                                 <div class="card-body text-center">
-                                    <h5 class="card-title">Iteraciones</h5>
+                                    <h5 class="card-title">Iterations</h5>
                                     <p class="card-text" id="nCounter"></p>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@
                 </div>
                 <br>
                 <div>
-                    <h4 class="text-center">Evaluación de las salidas según las entradas</h4>
+                    <h4 class="text-center">Evaluation of outputs based on inputs</h4>
                     
                     <table class="table table-striped table-hover" id="resultTable">
                         <thead>
@@ -131,7 +131,7 @@
                                 <th scope="col" class="text-center">X2</th>
                                 <th scope="col" class="text-center">W2</th>
                                 <th scope="col" class="text-center">ERROR</th>
-                                <th scope="col" class="text-center">SALIDA</th>
+                                <th scope="col" class="text-center">OUTPUT</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -140,7 +140,7 @@
                 </div>
                 <br>
                 <div class="collapse" id="testResponse">
-                    <h4 class="text-center">Probar nuevos valores</h4>
+                    <h4 class="text-center">Test New Values</h4>
 
                     <div class="row justify-content-center">
                         <div class="col-2">
